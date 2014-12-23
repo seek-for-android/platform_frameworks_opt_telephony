@@ -588,6 +588,10 @@ class SipCommandInterface extends BaseCommands implements CommandsInterface {
     }
 
     @Override
+    public void iccGetAtr(Message response) {
+    }
+
+    @Override
     public void nvReadItem(int itemID, Message response) {
     }
 

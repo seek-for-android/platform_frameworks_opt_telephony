@@ -510,6 +510,13 @@ public class UiccCard {
     }
 
     /**
+     * Exposes {@link CommandsInterface.iccGetAtr}
+     * @param response
+     */
+    public void iccGetAtr(Message response) {
+        mCi.iccGetAtr(response);
+    }
+    /**
      * Exposes {@link CommandsInterface.sendEnvelopeWithStatus}
      */
     public void sendEnvelopeWithStatus(String contents, Message response) {
