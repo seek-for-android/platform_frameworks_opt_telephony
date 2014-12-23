@@ -144,7 +144,8 @@ public class UiccController extends Handler {
     }
 
     public UiccCard getUiccCard() {
-        return getUiccCard(SubscriptionController.getInstance().getPhoneId(SubscriptionController.getInstance().getDefaultSubId()));
+        // TODO: check why SubscriptionManager.getDefaultSubId() returns SubscriptionManager.INVALID_SUB_ID
+        return getUiccCard(0);
     }
 
     public UiccCard getUiccCard(int slotId) {
