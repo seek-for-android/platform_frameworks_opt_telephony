@@ -574,6 +574,10 @@ class SipCommandInterface extends BaseCommands implements CommandsInterface {
     }
 
     @Override
+    public void iccOpenLogicalChannel_P2(String AID, byte p2, Message response) {
+    }
+
+    @Override
     public void iccCloseLogicalChannel(int channel, Message response) {
     }
 

@@ -571,6 +571,9 @@ class ImsPhoneCommandInterface extends BaseCommands implements CommandsInterface
     public void iccOpenLogicalChannel(String AID, Message response) {}
 
     @Override
+    public void iccOpenLogicalChannel_P2(String AID, byte p2, Message response) {}
+
+    @Override
     public void iccCloseLogicalChannel(int channel, Message response) {}
 
     @Override
