@@ -263,7 +263,7 @@ public final class RIL extends BaseCommands implements CommandsInterface {
     //***** Constants
 
     // match with constant in ril.cpp
-    static final int RIL_MAX_COMMAND_BYTES = (8 * 1024);
+    static final int RIL_MAX_COMMAND_BYTES = (8 * 0xFFFF);
     static final int RESPONSE_SOLICITED = 0;
     static final int RESPONSE_UNSOLICITED = 1;
 
