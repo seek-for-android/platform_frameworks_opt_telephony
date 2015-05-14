@@ -346,7 +346,8 @@ public final class RIL extends BaseCommands implements CommandsInterface {
                         }
 
                         // parcel length in big endian
-                        dataLength[0] = dataLength[1] = 0;
+                        dataLength[0] = (byte)((data.length >> 24) & 0xff);
+                        dataLength[1] = (byte)((data.length >> 16) & 0xff);
                         dataLength[2] = (byte)((data.length >> 8) & 0xff);
                         dataLength[3] = (byte)((data.length) & 0xff);
 
