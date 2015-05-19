@@ -1708,7 +1708,7 @@ public final class SimulatedCommands extends BaseCommands
     }
 
     @Override
-    public void iccOpenLogicalChannel_P2(String AID, byte p2, Message response) {
+    public void iccOpenLogicalChannel(String AID, byte p2, Message response) {
         unimplemented(response);
     }
 

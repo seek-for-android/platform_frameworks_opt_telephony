@@ -1778,7 +1778,7 @@ public interface CommandsInterface {
      * @param response Callback message. response.obj will be an int [1] with
      *            element [0] set to the id of the logical channel.
      */
-    public void iccOpenLogicalChannel_P2(String AID, byte p2, Message response);
+    public void iccOpenLogicalChannel(String AID, byte p2, Message response);
 
     /**
      * Close a previously opened logical channel to the SIM.

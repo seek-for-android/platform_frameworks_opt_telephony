@@ -477,8 +477,8 @@ public class UiccCard {
     /**
      * Exposes {@link CommandsInterface.iccOpenLogicalChannel}
      */
-    public void iccOpenLogicalChannel_P2(String AID, byte p2, Message response) {
-        mCi.iccOpenLogicalChannel_P2(AID, p2,
+    public void iccOpenLogicalChannel(String AID, byte p2, Message response) {
+        mCi.iccOpenLogicalChannel(AID, p2,
                 mHandler.obtainMessage(EVENT_OPEN_LOGICAL_CHANNEL_DONE, response));
     }
 
