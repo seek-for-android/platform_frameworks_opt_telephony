@@ -1772,8 +1772,6 @@ public interface CommandsInterface {
     /**
      * Open a logical channel to the SIM.
      *
-     * Input parameters equivalent to TS 27.007 AT+CCHO command.
-     *
      * @param AID Application id. See ETSI 102.221 and 101.220.
      * @param response Callback message. response.obj will be an int [1] with
      *            element [0] set to the id of the logical channel.

@@ -51,7 +51,6 @@ import android.telephony.SignalStrength;
 import android.telephony.SmsManager;
 import android.telephony.SmsMessage;
 import android.text.TextUtils;
-
 import android.util.SparseArray;
 import android.view.Display;
 
